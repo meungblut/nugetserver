@@ -1,15 +1,18 @@
-using System.Data.Services;
-using System.ServiceModel.Activation;
-using System.Web.Routing;
-using Ninject;
-using NuGet.Server;
-using NuGet.Server.DataServices;
-using NuGet.Server.Infrastructure;
-using RouteMagic;
+using Meungblut.NugetServer.DataServices;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(Possum.NugetServer.NuGetRoutes), "Start")]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(NuGetRoutes), "Start")]
 
-namespace Possum.NugetServer {
+namespace Meungblut.NugetServer.DataServices {
+    using System.Data.Services;
+    using System.ServiceModel.Activation;
+    using System.Web.Routing;
+
+    using Ninject;
+
+    using NuGet.Server;
+    using NuGet.Server.DataServices;
+    using NuGet.Server.Infrastructure;
+
     public static class NuGetRoutes {
         public static void Start() {
             MapRoutes(RouteTable.Routes);
