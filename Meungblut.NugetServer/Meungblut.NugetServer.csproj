@@ -88,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <None Include="Properties\PublishProfiles\PossumNuget.pubxml" />
+    <None Include="Properties\PublishProfiles\meungblutnuget.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
